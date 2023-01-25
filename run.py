@@ -83,30 +83,103 @@ def scene_two():
 # Start of scene three
 def scene_three():
     print("After walking for a while, Petra comes across a berry bush. At this point of our adventure, her tummy was growling like a grizzly bear because she hadent eaten for hours.")
-    print("She looked at the berries. Some of them she recognized, she remembered her kindergarden teacher showing them as berries you could eat.")
+    print("She looked at the berries. Some of them she recognized, she remembered her kindergarden teacher showing them as berries you can eat.")
     print("But some of them she had never seen. 'What should i do now?' she asked herself")
-    berries_or_be_burried = input("What do you think? Should she 'Eat all berries', 'None of them' or 'Only the ones she recognize'?: ")
-    if berries_or_be_burried.lower().strip() == "only the ones she know":
+    berries_or_be_burried = input("What do you think? Should she 'Eat all' berries, 'None' of them or only the ones she 'Recognize'? ")
+    if berries_or_be_burried.lower().strip() == "recognize":
         print("'Nomnomnom those berries were sooo yummy!' She shouted quietly for herself. With some newfound energy she felt ready to embark on her adventure.\n")
         scene_four()
-    elif berries_or_be_burried.lower().strip() == "eat all berries":
+    elif berries_or_be_burried.lower().strip() == "eat all":
         print("After eating every berries she could see, her tummy started aiking so much she had to run straight home. Guess she should have only eaten the ones she recognized. *** Game Over***")
         game_over = input("The berries got the best of you, dident they? Want to play again? 'Yes or No': ")
         if game_over.lower().strip() == "yes":
             start_game()
         else:
             exit()
-    else: 
+    elif berries_or_be_burried.lower().strip() == "none":
         print("Who does an adventure on a empty stomach? C'mon now, be serious for once. ***Game Over***\n")
         game_over = input("Want to play again? 'Yes or No': ")
         if game_over.lower().strip() == "yes":
             start_game()
         else:
             exit()
+    else:
+        print("Did you maybe misspell one of the choices? Lets replay it and this time choose 'Eat all', 'None' or 'Recognize'.\n")
+        scene_three()
 
 # Start of scene four
 def scene_four():
+    print("After walking for a while, Petra notices a big ol' snake laying across the road. Petra felt the fear raise in her body.")
+    print("She thought 'Should i make a run for it or should i confront the snake?' She staired at the snake for a while, the snake staired back.")
+    print("Petra was so afraid of the snake that she couldent move. It's up to you to help her out. ")
+    snakes_on_a_path = input("Should she 'run' or 'confront'? ")
+    if snakes_on_a_path == "confront":
+        print("Petra saves up some curage and finally says 'hey there, how do you do? I have never meet a cobra before.'.")
+        print("The snake replied 'Cobra? Bruh you serious? I am a python, little girl.'")
+        print("Petra said quickly 'Oh im terribly sorry mr. Python, i guess i watch to much netflix and not enough nature channel.")
+        print("The snake said 'Thats okay, guess that applies to most kids nowadays huh?'")
+        print("The snake continued 'I can let you pass if you can answer my question correct, deal?'. Petra noded like she's never noded before.")
+        print("'The question is: Tuples are immutable. True or False?' said the snake with a grin on his face.")
+        tuple_me_this = input("Now it's your time to shine. What should Petra answer, 'True' or 'False'? ")
+        if tuple_me_this.lower().strip() == 'true':
+            print("'Well done little girl! I'll let you continue now, as promised.' exclaimed the snake joyfully.\n")
+            scene_five()
+        else:
+            print("'Disappointed - yes, suprised - no' said the snake. Petra had no other choice than to go all the way back home. *** Game Over *** ")
+            game_over = input("Shame on you...shame on you. Want to play again? 'Yes or No': ")
+        if game_over.lower().strip() == "yes":
+            start_game()
+        else:
+            exit()
+    else:
+        print("Petra started running, only to stamble and sprain her wrist. But her adventure was over. *** Game Over ***")
+        game_over = input("Sometimes you just gotta face your fears. Want to play again? 'Yes or No': ")
+        if game_over.lower().strip() == "yes":
+            start_game()
+        else:
+            exit()
+        
+
+# Start of scene five
+def scene_five():
+    print("After walking for a while, Petra comes across a beautiful meadow, with a small pond in the middle.")
+    print("All this walking has made her warm and a bath would surely cool her off. But what if there are dangerous animals in the water?")
+    pond_pondering = input("Should she take a 'Bath' or 'Continue'? ")
+    if pond_pondering.lower().strip() == 'bath':
+        print("Petra dips her feet in the water, and she immediately feels something against her foot.")
+        print("She twitches and she sees the big ol' snake from the road before in the water.")
+        print("The snake looks as suprised as Petra and yells 'You again?'")
+        print("The snake continues 'I havent eaten all day and a little girl like you will keep my tummy full for hours.'")
+        print("'Please dont eat me, mr. Cob...i mean Python!' Petra shouted.")
+        print("The snake replied 'Okay, okay, chill a bit. Snakes got ears too you know.")
+        print("...'I tell you what, answer my question correct and i let you live' said the snake.")
+        print("The snake thought for a moment and said 'Do you use square brackets or curly brackets for dictionarys?'")
+        surly_curly = input("Do you know the answer? Is it '[]' or '{}' ")
+        if surly_curly ==  "{}":
+            print("'Well done again. I dont really care, i saw a fat toad on the other side, i can eat him.' said the snake and swam away.")
+            print("Petra cooled off at the pond for a little while and continued her journey.\n")
+            scene_six()
+        else:
+            print("'Well a deal is a deal' said the snake and swollowed Petra in just one bite. *** Game Over ***")
+            game_over = input("Want to play again? 'Yes or No': ")
+        if game_over.lower().strip() == "yes":
+            start_game()
+        else:
+            exit()
+
+    else:
+        print("Petra thought about it for a sec but decided to continue on her adventure.")
+        scene_six()
+
+
+# Start of scene six
+def scene_six():
     print(" ")
+
+
+
+
+
 
 
 # Run all program functions
@@ -116,6 +189,8 @@ def main():
     scene_two()
     scene_three()
     scene_four()
+    scene_five()
+    scene_six()
 
 
 main()
