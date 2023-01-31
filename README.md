@@ -1,31 +1,76 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Adventure Time!
+ 
+ ## Welcome to my third Portfolio Project!
+  
+  
+<br>
+<img src="" width="30%">
+<hr>
 
-Welcome Fredrik Gustafsson,
+## Technologies Used
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+ For this project we were allowed to use:
 
-## Reminders
+ - [Python](https://en.wikipedia.org/wiki/Python_(programming_language)
+ - As IDE i used [Visual Studio Code](https://visualstudio.microsoft.com/) and [Gitpod](https://www.gitpod.io/)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+<hr>
 
-## Creating the Heroku app
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+## Features
 
-1. `heroku/python`
-2. `heroku/nodejs`
+* ### 
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+<br>
+    
 
-Connect your GitHub repository and deploy as normal.
+<hr>
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+## Testing
 
------
-Happy coding!
+* 
+* 
+*  
+
+### Validator Testing
+
+* #### PEP8 Validator
+<br>
+  
+<hr>
+
+### Bugs
+
+#### No major bugs encountered
+
+<hr>
+
+### Deployment
+* The website was deployed to GitHub pages. The steps to deploy are as follows (when using [Gitpod](https://www.gitpod.io/)):
+    * In the GitHub repository, navigate to the 'Settings' tab.
+    * From the meny on the left, select the 'Pages'.
+    * Under the first category "Build and deployment", select "main" in the sub-category "Branch".
+    * Press the save-button.
+    * "Your site is now live." *happy dance*
+    * The live website can be found [here]
+<hr>
+
+## Credits
+
+### Content
+* [The Love Sandwiches Project](https://github.com/codingbyfreddish/love-sandwiches) from [CI](https://codeinstitute.net) in regards of both design/layout ideas as well as code. The scoring system is code from there.
+* All the course material from [CI's 'Full Stack Developer'](https://codeinstitute.net/se/full-stack-software-development-diploma/) curriculum leading up to this project.
+* 
+* 
+* 
+* 
+*  
+* 
+* 
+* 
+
+## Acknowledgments
+* ****
+
