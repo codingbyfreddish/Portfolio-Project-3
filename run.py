@@ -313,7 +313,7 @@ def scene_five():
 
 def scene_six():
     """
-    Start of scene six
+    End of the game, start of scene six
     """
     print("After walking for a while, Petra comes across a small cabin in the "
     "woods. It began to get pretty late and the sky was getting darker by "
