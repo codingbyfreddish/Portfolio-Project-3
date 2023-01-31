@@ -12,11 +12,11 @@ def start_game():
     """
     print("Hey there! First things first, what is your name?")
     global name 
-    name= input("Name: ")
+    name = input("Name:\n")
     print(f"{name}?? Well, i've heard worse i guess... "
     "who cares about names anyway, huh?\n")
     print(f"So {name} are you ready for an adventure? 'Yes' or 'No'")
-    answer = input("Answer: ")
+    answer = input("Answer:\n")
     if answer.lower().strip() == "yes":
         print(f"Buckle up {name}, you my friend are in for an epic " 
         "adventure!\n")
@@ -40,7 +40,7 @@ def scene_one():
     "she comes across a fork in the path.") 
     print("She must decide whether to take the path to the left or the path "
     "to the right.")
-    answer = input("Will she go 'Left' or 'Right': ")
+    answer = input("Will she go 'Left' or 'Right':\n")
     if answer.lower().strip() == "left":
         time.sleep(1)
         print("Petra takes the left path. After walking for a while, "
@@ -51,13 +51,13 @@ def scene_one():
         "old tresure chest filled with gold and what not?")
         print("Petra stands infront of the cave not sure what to do, "
         "can you help her choose?")
-        cave_or_not = input("'Go inside' or 'Continue': ")
+        cave_or_not = input("'Go inside' or 'Continue':\n")
         if cave_or_not.lower().strip() == "go inside":
             time.sleep(1)
             print("Petra goes inside the dark, scary cave... and was never seen "
             "again. ***Game Over***\n")
             game_over = input("Dont underestimate your gutfeeling. Want to "
-            "play again? 'Yes or No': ")
+            "play again? 'Yes or No':\n")
             if game_over.lower().strip() == "yes":
                 print("\n")
                 time.sleep(1)
@@ -75,7 +75,7 @@ def scene_one():
         "comes across a babbling brook.")
         print("She thinks for herself 'I am mighty thirsty, maybe i should "
         "drink alittle bit of water before continuing on my journey?'")
-        drink_or_dont = input("'Drink' or 'Dont': ")
+        drink_or_dont = input("'Drink' or 'Dont':\n")
         if drink_or_dont.lower().strip() == "drink":
             time.sleep(1)
             print("Petra takes a couple sips of water and says to herself "
@@ -91,7 +91,7 @@ def scene_one():
             print("She hurrys home, and drinks close to a gallon of water. "
             "If only she had gotten some water in time... *** Game Over***\n")
             game_over = input("Stay hydrated friends.  Want to play again? "
-            "'Yes or No': ")
+            "'Yes or No':\n")
             if game_over.lower().strip() == "yes":
                 time.sleep(1)
                 scene_one()
@@ -114,7 +114,7 @@ def scene_two():
     "On the other hand, i am awfully tired, maybe its better to take a nap "
     "under it?' she said to herself.")
     print("What do you think Petra should do, 'Climb' or 'Nap'?")
-    nap_or_die = input("Answer: ")
+    nap_or_die = input("Answer:\n")
     if nap_or_die.lower().strip() == "climb":
         time.sleep(1)
         print("Petra rushes to the tree and jumps up on the first branch "
@@ -125,7 +125,7 @@ def scene_two():
         print("She freezes, only to remember how scared of heights she is. "
         "Who knows, maybe she's still up there? ***Game Over***\n")
         game_over = input("Never turn down a nap. Never. Want to play again? "
-        "'Yes or No': ")
+        "'Yes or No':\n")
         if game_over.lower().strip() == "yes":
             time.sleep(1)
             scene_one()
@@ -159,7 +159,7 @@ def scene_three():
     print("But some of them she had never seen. 'What should i do now?' "
     "she asked herself")
     berries_or_be_burried = input("What do you think? Should she 'Eat all' "
-    "berries, 'None' of them or only the ones she 'Recognize'? ")
+    "berries, 'None' of them or only the ones she 'Recognize'?\n")
     if berries_or_be_burried.lower().strip() == "recognize":
         time.sleep(1)
         print("'Nomnomnom those berries were sooo yummy!' She shouted quietly "
@@ -172,7 +172,7 @@ def scene_three():
         "aiking so much she had to run straight home. Guess she should have "
         "only eaten the ones she recognized. *** Game Over***")
         game_over = input("The berries got the best of you, dident they? "
-        "Want to play again? 'Yes or No': ")
+        "Want to play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
             time.sleep(1)
             scene_one()
@@ -181,7 +181,7 @@ def scene_three():
     elif berries_or_be_burried.lower().strip() == "none":
         print("Who does an adventure on a empty stomach? C'mon now, be "
         "serious for once. ***Game Over***\n")
-        game_over = input("Want to play again? 'Yes or No': ")
+        game_over = input("Want to play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
             scene_one()
         else:
@@ -202,7 +202,7 @@ def scene_four():
     "snake?' She staired at the snake for a while, the snake staired back.")
     print("Petra was so afraid of the snake that she couldent move. It's up "
     "to you to help her out. ")
-    snakes_on_a_path = input("Should she 'run' or 'confront'? ")
+    snakes_on_a_path = input("Should she 'run' or 'confront'?\n")
     if snakes_on_a_path == "confront":
         time.sleep(1)
         print("Petra saves up some curage and finally said 'hey there, how do "
@@ -218,7 +218,7 @@ def scene_four():
         print("'The question is: Tuples are immutable. True or False?' said "
         "the snake with a grin on his face.")
         tuple_me_this = input("Now it's your time to shine. What should Petra "
-        "answer, 'True' or 'False'? ")
+        "answer, 'True' or 'False'?\n")
         if tuple_me_this.lower().strip() == 'true':
             time.sleep(1)
             print("'Well done little girl! I'll let you continue now, as "
@@ -230,7 +230,7 @@ def scene_four():
             "Petra had no other choice than to go all the way back home. "
             "*** Game Over *** ")
             game_over = input("Shame on you...shame on you. Want to play "
-            "again? 'Yes or No': ")
+            "again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
             time.sleep(1)
             scene_one()
@@ -240,7 +240,7 @@ def scene_four():
         print("Petra started running, only to stamble and sprain her wrist. "
         "But her adventure was over. *** Game Over ***")
         game_over = input("Sometimes you just gotta face your fears. Want to "
-        "play again? 'Yes or No': ")
+        "play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
             time.sleep(1)
             scene_one()
@@ -260,7 +260,7 @@ def scene_five():
     "with a small pond in the middle.")
     print("All this walking has made her warm and a bath would surely cool "
     "her off. But what if there are dangerous animals in the water?")
-    pond_pondering = input("Should she take a 'Bath' or 'Continue'? ")
+    pond_pondering = input("Should she take a 'Bath' or 'Continue'?\n")
     if pond_pondering.lower().strip() == 'bath':
         time.sleep(1)
         print("Petra dips her feet in the water, and she immediately felt "
@@ -278,7 +278,7 @@ def scene_five():
         "live.' said the snake.")
         print("The snake thought for a moment and said 'Do you use square "
         "brackets or curly brackets for dictionarys?'")
-        surly_curly = input("Do you know the answer? Is it '[]' or '{}'? ")
+        surly_curly = input("Do you know the answer? Is it '[]' or '{}'?\n")
         if surly_curly.lower().strip() == "{}":
             time.sleep(1)
             print("'Well done again. I dont really care, i saw a fat toad on "
@@ -291,7 +291,7 @@ def scene_five():
             time.sleep(1)
             print("'Well a deal is a deal' said the snake and swollowed Petra "
             "in just one bite. *** Game Over ***")
-            game_over = input("Want to play again? 'Yes or No': ")
+            game_over = input("Want to play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
             time.sleep(1)
             scene_one()
@@ -322,7 +322,7 @@ def scene_six():
     "should knock on this door and see if they can give me a ride home?")
     print("And then she thought: '...then again what adventure would that be? "
     "Maybe i'll just continue?")
-    hardknock_life = input("Should Petra 'Knock' on the door or 'Continue'? ")
+    hardknock_life = input("Should Petra 'Knock' on the door or 'Continue'?\n")
     if hardknock_life.lower().strip() == "knock":
         time.sleep(1)
         print("Petra knocks on the door. After a couple of seconds a old man "
@@ -341,7 +341,7 @@ def scene_six():
         print("And Petra was hungry, had been a while since she ate them "
         "berries. But eating dinner at strangers?")
         stranger_danger = input("Should Petra eat dinner at the strangers?"
-        " 'Yes' or 'No' ")
+        " 'Yes' or 'No'\n")
         if stranger_danger.lower().strip() == "yes":
             time.sleep(1)
             print("'Yes mam, im hungry' said Petra. And the old lady reply "
@@ -365,7 +365,7 @@ def scene_six():
             "never thought you would make it.")
             print(f"One last thing, {name}... naa, nevermind. It wasent "
             "anything important anyway.")
-            game_over = input("Want to play again? 'Yes or No': ")
+            game_over = input("Want to play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
             time.sleep(2)
             scene_one()
@@ -396,7 +396,7 @@ def scene_six():
         "matters!")
         print(f"So congrats {name}, you finished my adventure game like a "
         "champion! (Kinda)")
-        game_over = input("Want to play again? 'Yes or No': ")
+        game_over = input("Want to play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
             time.sleep(2)
             scene_one()
