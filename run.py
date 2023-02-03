@@ -62,14 +62,23 @@ def scene_one():
                 print("\n")
                 time.sleep(1)
                 scene_one()
-            else:
+            elif game_over.lower().strip() == "no":
                 exit()
-        else:
+            else:
+                print("Did you maybe misspell one of the choices? Lets try "
+                      "again...\n")
+                time.sleep(1)
+                scene_one()
+        elif cave_or_not.lower().strip() == "continue":
             print("Petra choose to trust her gut and wanders away from "
                   "the cave.\n")
             time.sleep(1)
             scene_two()
-
+        else:
+            print("Did you maybe misspell one of the choices? Lets try "
+                  "again...\n")
+            time.sleep(1)
+            scene_one()
     elif answer.lower().strip() == "right":
         print("Petra takes the right path. After walking for a while, she "
               "comes across a babbling brook.")
@@ -91,13 +100,17 @@ def scene_one():
             print("She hurrys home, and drinks close to a gallon of water. "
                   "If only she had gotten some water in time... "
                   "*** Game Over***\n")
-            game_over = input("Stay hydrated friends.  Want to play again? "
-                              "'Yes or No':\n")
             if game_over.lower().strip() == "yes":
+                print("\n")
                 time.sleep(1)
                 scene_one()
-            else:
+            elif game_over.lower().strip() == "no":
                 exit()
+            else:
+                print("Did you maybe misspell one of the choices? Lets try "
+                      "again...\n")
+                time.sleep(1)
+                scene_one()
 
     else:
         print("Did you maybe misspell one of the choices? Lets try again...\n")
@@ -428,4 +441,4 @@ def main():
     scene_four()
     scene_five()
     scene_six()
-    main()
+main()
