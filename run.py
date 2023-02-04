@@ -429,9 +429,11 @@ def scene_six():
                 time.sleep(1)
                 scene_one()
         elif stranger_danger.lower().strip() == "no":
-            print("Petra said 'No thank you, i am not that hungry, thanks anyway.")
+            print("Petra said 'No thank you, i am not that hungry, thanks "
+                  "anyway.")
             print("Barbra said kindly 'Ah you just wanna go home, "
-                  "dont you little friend? Of course dear, we'll walk you home.'")
+                  "dont you little friend? Of course dear, we'll walk you "
+                  "home.'")
             print("Petra and her new friends George and Barbra "
                   "took a walk home to Petras house, it only took about "
                   "10minutes.")
@@ -460,7 +462,8 @@ def scene_six():
                 time.sleep(1)
                 scene_one()
         else:
-            print("Did you maybe misspell one of the choices? Lets try again...\n")
+            print("Did you maybe misspell one of the choices? Lets try "
+                  "again...\n")
             time.sleep(1)
             scene_six()
 
