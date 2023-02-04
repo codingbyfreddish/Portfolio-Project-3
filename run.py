@@ -363,7 +363,7 @@ def scene_five():
 
 def scene_six():
     """
-    End of the game, start of scene six
+    Start of scene six, end of the game
     """
     print("After walking for a while, Petra comes across a small cabin in the "
           "woods. It began to get pretty late and the sky was getting darker "
@@ -417,13 +417,52 @@ def scene_six():
             print(f"One last thing, {name}... naa, nevermind. It wasent "
                   "anything important anyway.")
             game_over = input("Want to play again? 'Yes or No':\n")
-        if game_over.lower().strip() == "yes":
-            time.sleep(2)
-            scene_one()
+            if game_over.lower().strip() == "yes":
+                print("\n")
+                time.sleep(1)
+                scene_one()
+            elif game_over.lower().strip() == "no":
+                exit()
+            else:
+                print("Did you maybe misspell one of the choices? Lets try "
+                      "again...\n")
+                time.sleep(1)
+                scene_one()
+        elif stranger_danger.lower().strip() == "no":
+            print("Petra said 'No thank you, i am not that hungry, thanks anyway.")
+            print("Barbra said kindly 'Ah you just wanna go home, "
+                  "dont you little friend? Of course dear, we'll walk you home.'")
+            print("Petra and her new friends George and Barbra "
+                  "took a walk home to Petras house, it only took about "
+                  "10minutes.")
+            print("Turns out Petras long adventure only took her to the end "
+                  "of the street.")
+            print("Petras parents were very happy to have their little girl "
+                  "home again. Her dad said 'Hey sweetie! Want some hotdawgs")
+            print(", i've a few.' Petra, who was very hungry, said 'Oh yes "
+                  "i would love some!' They were delicous.")
+            print("******* THE END *******")
+            print(f"Hey {name} you did it! You got Petra home safe and sound!")
+            print(f"But be honest {name} aren't you curious of what George "
+                  "and Barbra were having for dinner?")
+            print("Thank you for playing my adventure game! TBH i "
+                  "never thought you would make it.")
+            game_over = input("Want to play again? 'Yes or No':\n")
+            if game_over.lower().strip() == "yes":
+                print("\n")
+                time.sleep(1)
+                scene_one()
+            elif game_over.lower().strip() == "no":
+                exit()
+            else:
+                print("Did you maybe misspell one of the choices? Lets try "
+                      "again...\n")
+                time.sleep(1)
+                scene_one()
         else:
+            print("Did you maybe misspell one of the choices? Lets try again...\n")
             time.sleep(1)
-            print("Once again, THANK YOU FOR PLAYING. Take care.")
-            exit()
+            scene_six()
 
     elif hardknock_life.lower().strip() == "continue":
         print("'Hell no, stranger danger!' Petra said to herself and walked "
@@ -449,12 +488,16 @@ def scene_six():
               "champion! (Kinda)")
         game_over = input("Want to play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
-            time.sleep(2)
-            scene_one()
-        else:
+            print("\n")
             time.sleep(1)
-            print("Once again, THANK YOU FOR PLAYING. Take care.")
+            scene_one()
+        elif game_over.lower().strip() == "no":
             exit()
+        else:
+            print("Did you maybe misspell one of the choices? Lets try "
+                  "again...\n")
+            time.sleep(1)
+            scene_one()
 
     else:
         print("Did you maybe misspell one of the choices? "
