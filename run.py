@@ -141,10 +141,16 @@ def scene_two():
         game_over = input("Never turn down a nap. Never. Want to play again? "
                           "'Yes or No':\n")
         if game_over.lower().strip() == "yes":
+            print("\n")
             time.sleep(1)
             scene_one()
-        else:
+        elif game_over.lower().strip() == "no":
             exit()
+        else:
+            print("Did you maybe misspell one of the choices? Lets try "
+                  "again...\n")
+            time.sleep(1)
+            scene_two()
     elif nap_or_die.lower().strip() == "nap":
         print("Petra lays down under the tree. Within minutes, she falls "
               "asleep.")
@@ -193,20 +199,27 @@ def scene_three():
         if game_over.lower().strip() == "yes":
             time.sleep(1)
             scene_one()
-        else:
+        elif game_over.lower().strip() == "no":
             exit()
+        else:
+            print("Did you maybe misspell one of the choices? Lets try "
+                  "again...\n")
+            time.sleep(1)
+            scene_three()
     elif berries_or_be_burried.lower().strip() == "none":
         print("Who does an adventure on a empty stomach? C'mon now, be "
               "serious for once. ***Game Over***\n")
         game_over = input("Want to play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
+            time.sleep(1)
             scene_one()
-        else:
+        elif game_over.lower().strip() == "no":
             exit()
-    else:
-        print("Did you maybe misspell one of the choices? Lets replay it "
-              "and this time choose 'Eat all', 'None' or 'Recognize'.\n")
-        scene_three()
+        else:
+            print("Did you maybe misspell one of the choices? Lets "
+                  "try again...\n")
+            time.sleep(1)
+            scene_three()
 
 
 def scene_four():
@@ -244,7 +257,7 @@ def scene_four():
                   "promised.' exclaimed the snake joyfully.\n")
             time.sleep(1)
             scene_five()
-        else:
+        elif tuple_me_this.lower().strip() == 'false':
             print("'Disappointed - yes, suprised - no' said the snake. "
                   "Petra had no other choice than to go all the way back "
                   "home. *** Game Over *** ")
@@ -253,8 +266,13 @@ def scene_four():
         if game_over.lower().strip() == "yes":
             time.sleep(1)
             scene_one()
-        else:
+        elif game_over.lower().strip() == "no":
             exit()
+        else:
+            print("Did you maybe misspell one of the choices? Lets "
+                  "try again...\n")
+        time.sleep(1)
+        scene_four()
     elif snakes_on_a_path == "run":
         print("Petra started running, only to stamble and sprain her wrist. "
               "But her adventure was over. *** Game Over ***")
@@ -441,4 +459,6 @@ def main():
     scene_four()
     scene_five()
     scene_six()
+
+
 main()
