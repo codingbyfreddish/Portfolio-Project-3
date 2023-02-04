@@ -281,8 +281,13 @@ def scene_four():
         if game_over.lower().strip() == "yes":
             time.sleep(1)
             scene_one()
-        else:
+        elif game_over.lower().strip() == "no":
             exit()
+        else:
+            print("Did you maybe misspell one of the choices? Lets "
+                  "try again...\n")
+        time.sleep(1)
+        scene_four()
     else:
         print("Did you maybe misspell one of the choices? Lets try again...\n")
         time.sleep(1)
@@ -328,11 +333,21 @@ def scene_five():
             print("'Well a deal is a deal' said the snake and swollowed Petra "
                   "in just one bite. *** Game Over ***")
             game_over = input("Want to play again? 'Yes or No':\n")
-        if game_over.lower().strip() == "yes":
-            time.sleep(1)
-            scene_one()
+            if game_over.lower().strip() == "yes":
+                time.sleep(1)
+                scene_one()
+            elif game_over.lower().strip() == "no":
+                exit()
+            else:
+                print("Did you maybe misspell one of the choices? Lets "
+                      "try again...\n")
+                time.sleep(1)
+                scene_five()
         else:
-            exit()
+            print("Did you maybe misspell one of the choices? Lets "
+                  "try again...\n")
+        time.sleep(1)
+        scene_five()
 
     elif pond_pondering.lower().strip() == 'continue':
         time.sleep(1)
