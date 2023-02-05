@@ -111,6 +111,11 @@ def scene_one():
                       "again...\n")
                 time.sleep(1)
                 scene_one()
+        else:
+            print("Did you maybe misspell one of the choices? Lets try "
+                  "again...\n")
+            time.sleep(1)
+            scene_one()        
     else:
         print("Did you maybe misspell one of the choices? Lets try again...\n")
         time.sleep(1)
@@ -219,6 +224,11 @@ def scene_three():
                   "try again...\n")
             time.sleep(1)
             scene_three()
+    else:
+        print("Did you maybe misspell one of the choices? Lets try "
+              "again...\n")
+        time.sleep(1)
+        scene_three()
 
 
 def scene_four():
@@ -262,11 +272,17 @@ def scene_four():
                   "home. *** Game Over *** ")
             game_over = input("Shame on you...shame on you. Want to play "
                               "again? 'Yes or No':\n")
-        if game_over.lower().strip() == "yes":
-            time.sleep(1)
-            scene_one()
-        elif game_over.lower().strip() == "no":
-            exit()
+            if game_over.lower().strip() == "yes":
+                print("\n")
+                time.sleep(1)
+                scene_one()
+            elif game_over.lower().strip() == "no":
+                exit()
+            else:
+                print("Did you maybe misspell one of the choices? Lets try "
+                      "again...\n")
+                time.sleep(1)
+                scene_four()
         else:
             print("Did you maybe misspell one of the choices? Lets "
                   "try again...\n")
