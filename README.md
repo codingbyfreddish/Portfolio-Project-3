@@ -2,10 +2,10 @@
  
  ## Welcome to my third Portfolio Project!
 This is my third project (of five) for my full-stack dev. course at [Code Institute](https://codeinstitute.net) and this time i chose an adventure game. This project is written in Python only, so it's CLI for the win. It runs in the CI mock terminal on [Heroku](www.heroku.com). <br> The user gets to follow Petra around on an adventure and with simple commands guide
-her through a series of choices to finally complete the game. The propose of this game is to give the user a fun, positive experience. <br><br> Here is a link to the game can be found [here]()
+her through a series of choices to finally complete the game. The propose of this game is to give the user a fun, positive experience. <br><br> The link to the game can be found [here](https://pp3-adventuregame.herokuapp.com/)
   
 <br>
-<img src="" width="30%">
+<img src="assets/images/pp3_responsive.png" width="30%">
 <hr>
 
 ## Technologies Used
