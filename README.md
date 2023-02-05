@@ -25,16 +25,22 @@ her through a series of choices to finally complete the game. The propose of thi
     * The user is prompted to write his/her/their name. And then answer if the user is ready to start the game.
 
 <br>
-<img src="" width="30%">
+<img src="assets/images/pp3_introduction.png" width="30%">
 <hr>
 
-* ### The adventure
+* ### The Adventure
     * When the user is ready the game starts with little Petra in the forrest.
 
 <br>
-<img src="" width="30%">
+<img src="assets/images/pp3_startofgame.png" width="40%">
 <hr>    
 
+* ### Imports, Libraries
+    * The import used is Time. 
+    * This improves the experience for the user and makes it easier to follow along.
+
+<br>
+<img src="assets/images/pp3_import.png" width="20%">
 <hr>
 
 
@@ -47,8 +53,11 @@ her through a series of choices to finally complete the game. The propose of thi
 ### Validator Testing
 
 * #### PEP8 Validator
+    * The pep8 validator used is from [Code Institute](https://codeinstitute.net)
+    * Link to it can be found here: [Python PEP8 validator from CI](https://pep8ci.herokuapp.com/)
+
 <br>
-  
+ <img src="assets/images/pp3_pep8ciLinter.png" width="40%"> 
 <hr>
 
 ### Bugs
