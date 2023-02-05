@@ -1,9 +1,8 @@
 # Adventure Time!
  
  ## Welcome to my third Portfolio Project!
-This is my third project (of five) for my full-stack dev. course at [Code Institute](https://codeinstitute.net) and this time i choose an adventure game.
-This project is written in Python only, so it's CLI for the win. The user gets to follow Petra around on an adventure and with simple commands guide
-her through a series of choices to finally complete the game. The propose of this game is to give the user a fun, positive experience. 
+This is my third project (of five) for my full-stack dev. course at [Code Institute](https://codeinstitute.net) and this time i chose an adventure game. This project is written in Python only, so it's CLI for the win. It runs in the CI mock terminal on [Heroku](www.heroku.com). <br> The user gets to follow Petra around on an adventure and with simple commands guide
+her through a series of choices to finally complete the game. The propose of this game is to give the user a fun, positive experience. <br><br> Here is a link to the game can be found [here]()
   
 <br>
 <img src="" width="30%">
@@ -46,9 +45,12 @@ her through a series of choices to finally complete the game. The propose of thi
 
 ## Testing
 
-* 
-* 
-*  
+* Tested on three diffrent terminals:
+    * VS Code
+    * Gitpod
+    * Heroku
+* Tested every possible choice.
+* Tested misspelling on every choice.
 
 ### Validator Testing
 
@@ -67,31 +69,23 @@ her through a series of choices to finally complete the game. The propose of thi
 <hr>
 
 ## Deployment
-* [Github](https://www.github.com)
-    * The website was deployed to GitHub pages. The steps to deploy are as follows (when using [Gitpod](https://www.gitpod.io/)):
-    * In the GitHub repository, navigate to the 'Settings' tab.
-    * From the meny on the left, select the 'Pages'.
-    * Under the first category "Build and deployment", select "main" in the sub-category "Branch".
-    * Press the save-button.
-    * "Your site is now live." *happy dance*
-    * The live website can be found [here]
-
-* [Heroku](https://www.heroku.com/)
-    *
-    *
-    *
-    *
-    *
+* Steps for deployment on [Heroku](https://www.heroku.com/)
+    * Fork or clone this github repository.
+    * Create a new Heroku app.
+    * Set the Buildpacks to python and node.js (in that order).
+    * Link the heroku app to the repository.
+    * Click on 'deploy'.
 <hr>
 
 ## Credits
 * [The Love Sandwiches Project](https://github.com/codingbyfreddish/love-sandwiches) from [CI](https://codeinstitute.net).
 * All the course material from [CI's 'Full Stack Developer'](https://codeinstitute.net/se/full-stack-software-development-diploma/) curriculum leading up to this project.
 ### Content
-* The story is from [Chatgpt](https://chat.openai.com/auth/login). 
+* The story is from [Chatgpt](https://chat.openai.com/auth/login). Searched for "Write a story for an adventure game with multiple choices containing 10 scenes" (i shorted it abit).
+* The deployment section in this readme file is from the sample from [Code Institute](https://codeinstitute.net).
 
 ## Acknowledgments
-* ****
+* **My mentor Ronan McClelland gave me not only the tip where to get the story but also many other things to keep in mind when writing this project. Thank you, sir :)**
 
 
 
