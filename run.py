@@ -115,7 +115,7 @@ def scene_one():
             print("Did you maybe misspell one of the choices? Lets try "
                   "again...\n")
             time.sleep(1)
-            scene_one()      
+            scene_one()
     else:
         print("Did you maybe misspell one of the choices? Lets try again...\n")
         time.sleep(1)
