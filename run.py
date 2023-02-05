@@ -11,14 +11,14 @@ def start_game():
     Introduction. User name and confirmation to start game
     """
     print("Hey there! First things first, what is your name?")
-    global name
-    name = input("Name:\n")
-    print(f"{name}?? Well, i've heard worse i guess... "
+    global NAME
+    NAME = input("Name:\n")
+    print(f"{NAME}?? Well, i've heard worse i guess... "
           "who cares about names anyway, huh?\n")
-    print(f"So {name} are you ready for an adventure? 'Yes' or 'No'")
+    print(f"So {NAME} are you ready for an adventure? 'Yes' or 'No'")
     answer = input("Answer:\n")
     if answer.lower().strip() == "yes":
-        print(f"Buckle up {name}, you my friend are in for an epic "
+        print(f"Buckle up {NAME}, you my friend are in for an epic "
               "adventure!\n")
         time.sleep(2)
         scene_one()
@@ -111,7 +111,6 @@ def scene_one():
                       "again...\n")
                 time.sleep(1)
                 scene_one()
-
     else:
         print("Did you maybe misspell one of the choices? Lets try again...\n")
         time.sleep(1)
@@ -348,7 +347,6 @@ def scene_five():
                   "try again...\n")
         time.sleep(1)
         scene_five()
-
     elif pond_pondering.lower().strip() == 'continue':
         time.sleep(1)
         print("Petra thought about it for a second but decided to continue "
@@ -410,11 +408,11 @@ def scene_six():
                   "far for adventure, life is a big adventure in it self.")
             time.sleep(2)
             print("******* THE END *******")
-            print(f"Well played {name}! Thanks to you Petra had a magic day "
+            print(f"Well played {NAME}! Thanks to you Petra had a magic day "
                   "and got home safe and sound.")
             print("Thank you for playing my adventure game, you rock! TBH i "
                   "never thought you would make it.")
-            print(f"One last thing, {name}... naa, nevermind. It wasent "
+            print(f"One last thing, {NAME}... naa, nevermind. It wasent "
                   "anything important anyway.")
             game_over = input("Want to play again? 'Yes or No':\n")
             if game_over.lower().strip() == "yes":
@@ -427,7 +425,7 @@ def scene_six():
                 print("Did you maybe misspell one of the choices? Lets try "
                       "again...\n")
                 time.sleep(1)
-                scene_one()
+                scene_six()
         elif stranger_danger.lower().strip() == "no":
             print("Petra said 'No thank you, i am not that hungry, thanks "
                   "anyway.")
@@ -444,8 +442,8 @@ def scene_six():
             print(", i've a few.' Petra, who was very hungry, said 'Oh yes "
                   "i would love some!' They were delicous.")
             print("******* THE END *******")
-            print(f"Hey {name} you did it! You got Petra home safe and sound!")
-            print(f"But be honest {name} aren't you curious of what George "
+            print(f"Hey {NAME} you did it! You got Petra home safe and sound!")
+            print(f"But be honest {NAME} aren't you curious of what George "
                   "and Barbra were having for dinner?")
             print("Thank you for playing my adventure game! TBH i "
                   "never thought you would make it.")
@@ -460,7 +458,7 @@ def scene_six():
                 print("Did you maybe misspell one of the choices? Lets try "
                       "again...\n")
                 time.sleep(1)
-                scene_one()
+                scene_six()
         else:
             print("Did you maybe misspell one of the choices? Lets try "
                   "again...\n")
@@ -484,10 +482,10 @@ def scene_six():
         time.sleep(2)
         print("******* THE END *******")
         print("So you dident have the guts to knock on the cabindoor, did "
-              f"you {name}?")
+              f"you {NAME}?")
         print("But you did get Petra home safe and safe, which is all that "
               "matters!")
-        print(f"So congrats {name}, you finished my adventure game like a "
+        print(f"So congrats {NAME}, you finished my adventure game like a "
               "champion! (Kinda)")
         game_over = input("Want to play again? 'Yes or No':\n")
         if game_over.lower().strip() == "yes":
@@ -500,8 +498,7 @@ def scene_six():
             print("Did you maybe misspell one of the choices? Lets try "
                   "again...\n")
             time.sleep(1)
-            scene_one()
-
+            scene_six()
     else:
         print("Did you maybe misspell one of the choices? "
               "Lets try again...\n")

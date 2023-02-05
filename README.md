@@ -13,7 +13,7 @@ her through a series of choices to finally complete the game. The propose of thi
 
  For this project we were allowed to use:
 
- - [Python](https://en.wikipedia.org/wiki/Python_(programming_language)
+ - [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
  - As IDE i used [Visual Studio Code](https://visualstudio.microsoft.com/) and [Gitpod](https://www.gitpod.io/)
 
 <hr>
